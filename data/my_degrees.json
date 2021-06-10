@@ -1,0 +1,20 @@
+{
+  "my_degrees": [
+    {
+      "degree": {
+        "school": "Dickinson College",
+        "major": "Mathematics",
+        "type": "BS",
+        "year": 2002
+      }
+    },
+    {
+        "degree":{
+          "school": "Boston University",
+          "major": "Computer Information Systems",
+          "type": "MS",
+          "year": 2022
+        }
+    }
+  ]
+}
