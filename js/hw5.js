@@ -4,7 +4,7 @@
     var httpRequest;
     // get the JSON data file from the server location
     document.getElementById("myButton").onclick = function() { getJSONData('https://robhpeters.github.io/data/my_degrees.json');
-    document.getElementById("myButton").disabled = true;
+    document.getElementById("myButton").remove();
   };
   // getJSONData creates a new XMLHttpRequest object
   function getJSONData(url) {
