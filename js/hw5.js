@@ -37,6 +37,7 @@
   }
   function buildTable(myObj) {
     let text = "<table border='1'>"
+    text += "<th>School</th><th>Program</th><th>Degree Type</th><th>Year</th>"
     var i;
     // loop through the my_degrees object
     for (i = 0; i < myObj['my_degrees'].length; i++) {
