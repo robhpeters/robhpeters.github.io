@@ -37,7 +37,7 @@
     }
   }
   function buildTable(myObj) {
-    let text = "<table border='1'>"
+    let text = "<table border='1' class='collapse'>"
     text += "<th>School</th><th>Program</th><th>Degree Type</th><th>Year</th>"
     var i;
     // loop through the my_degrees object
@@ -59,3 +59,4 @@
 
   }
 })();
+
