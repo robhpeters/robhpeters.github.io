@@ -1,0 +1,15 @@
+body{
+	font-family: Arial, Verdana, sans-serif;
+}
+
+th {
+  font-style: italic;
+  font-style: bold;
+}
+td{
+
+}
+
+.collapse{
+  border-collapse: collapse;
+}
