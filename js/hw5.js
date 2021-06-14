@@ -26,8 +26,8 @@
       if (httpRequest.status === 200) {
         // if successful, parse the contents of responseText
         const myObj = JSON.parse(this.responseText);
-        // start an HTML table
-        buildTable(myObj);
+        // call function to build table, returns table result to print to DOM
+        document.getElementById("jsondata").innerHTML = buildTable(myObj);
 
       } else {
         // if our AJAX call is unsuccessful, provide an alert indicating that there was a problem
@@ -53,7 +53,8 @@
     }
     // close the table
     text += "</table>"
-    // write the table out via DOM jsondata element
-    document.getElementById("jsondata").innerHTML = text;
+
+    return text;
+
   }
 })();
