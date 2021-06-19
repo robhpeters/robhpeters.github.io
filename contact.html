@@ -8,30 +8,45 @@
         <!--  I added this charset because the validator was giving me an error.
         I googled online and this is what I found to avoid the error -->
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width", initial-scale="1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="js/projectjs.js" defer></script>
 </head>
 <body>
+  <nav class="topnav" id="myTopNav">
+    <a href="termproject.html">Home</a>
+    <a href="resume.html">Resume</a>
+    <a href="travel.html">Photos</a>
+    <a href="cooking.html">Recipes</a>
+    <a href="contact.html" class="active">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="navFunction();">
+        <i class="fa fa-bars"></i>
+    </a>
+  </nav>
+  <div class="contact-grid">
+    <div class="contact1">
     <h3>Contact Me</h3>
-    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
-            <label for="Name" class="fcf-label">Your name</label>
-            <div class="fcf-input-group">
-                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+    <form id="form-id" class="name-class" method="post" action="">
+            <label for="Name" class="form-label">Your name</label>
+            <div class="input-group">
+                <input type="text" id="Name" name="Name" class="form-control" required>
             </div>
-        <div class="fcf-form-group">
-            <label for="Email" class="fcf-label">Your email address</label>
-            <div class="fcf-input-group">
-                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+        <div class="form-group">
+            <label for="Email" class="form-label">Your email address</label>
+            <div class="input-group">
+                <input type="email" id="Email" name="Email" class="form-control" required>
             </div>
-        <div class="fcf-form-group">
-            <label for="Message" class="fcf-label">Your message</label>
-            <div class="fcf-input-group">
-                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+        <div class="form-group">
+            <label for="Message" class="formlabel">Your message</label>
+            <div class="input-group">
+                <textarea id="Message" name="Message" class="form-control" rows="6" maxlength="3000" required></textarea>
             </div>
         </div>
-        <div class="fcf-form-group">
-            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
+        <div class="form-group">
+            <button type="submit" id="fcf-button" class="btn">Send</button>
         </div>
+      </div>
+  </div>
 </body>
 </html>
+
