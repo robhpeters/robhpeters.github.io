@@ -4,7 +4,7 @@ body{
 	margin-left: 100px;
 	margin-right: 100px;
 	background-color: black;
-	color: white;
+	color: #ddd;
 }
 
 /* create center, using for image at top of bio page*/
@@ -33,7 +33,6 @@ body{
 .resume-h3{
 	color: rgb(46,116,181);
 }
-
 
 .center-text{
 	text-align: center;
@@ -76,18 +75,11 @@ body{
 	width: 1275px;
 }
 
-/*float the travel photos*/
-.travel-photo{
-	float: left;
-	width: 550px;
-	margin: 10px;
-}
-
 p {
 	text-align: left;
 }
 
-h1, h2, h3{
+h1, h2{
 	font-style: italic;
 }
 
@@ -95,7 +87,7 @@ h1, h2, h3{
 img {
 	border-style: solid;
 	border-width: medium;
-	border-color: snow;
+	border-color: #ddd;
 }
 
 
@@ -114,17 +106,19 @@ a:hover{
 	color: white;
 }
 
-/* Add a black background color to the top navigation */
+/* Add a grey background color to the top navigation */
 .topnav {
   background-color: #8888;
   overflow: hidden;
+	margin-left: 17%;
+	margin-right: 17%;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #ddd;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -139,7 +133,7 @@ a:hover{
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-  background-color: #04AA6D;
+  background-color: rgb(46,116,181);
   color: white;
 }
 
@@ -173,6 +167,7 @@ a:hover{
 .main{
 	width: 50%;
 	margin-left: 25%;
+	margin-top: 50px;
 }
 
 .slider{
@@ -196,5 +191,80 @@ a:hover{
 }
 
 .btn:hover{
-	background:#04AA6D;
+	background:rgb(46,116,181);
 }
+
+.headshot {
+	display: block;
+	margin: 50px auto auto;
+}
+
+/* Build grid for Resume */
+.item1 { grid-area: item1; }
+.item2 { grid-area: item2; }
+.item3 { grid-area: item3; }
+.item4 { grid-area: item4; }
+.item5 { grid-area: item5; }
+.item6 { grid-area: item6; }
+.item7 { grid-area: item7; }
+
+.resume-grid {
+	display: grid;
+	grid-template-areas:
+		'item1 item1 item1 item1'
+		'item3 item4 item4 item4'
+		'item3 item4 item4 item4'
+		'item5 item4 item4 item4'
+		'item5 item4 item4 item4'
+		'item6 item6 item6 item6'
+		'item7 item7 item7 item7';
+	grid-gap: 25px;
+	background-color: #8888;
+	color: #ddd;
+	padding-left: 20px;
+	grid-template-columns: 20% 25% 25% 17%;
+	margin-left: 17%;
+	margin-right: 17%;
+	margin-top: 30px;
+}
+
+.resume-heading {
+	text-align: center;
+	background-color: rgb(46,116,181);
+}
+
+.resume-list > li{
+	overflow-wrap: anywhere;
+}
+
+/* make Resume page responsive */
+@media screen and (max-width: 600px){
+	.resume-grid{
+		margin: top 30px auto;
+		padding: auto;
+		grid-gap: 0px;
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			"item1"
+			"item3"
+			"item4"
+			"item5"
+			"item6"
+			"item7";
+
+	}
+	.resume-heading {
+		margin-right: 20px;
+	}
+}
+
+figure {
+	display: inline-block;
+	margin: 0px;
+}
+
+figcaption {
+	text-align: center;
+	font-style: italic;
+}
+
