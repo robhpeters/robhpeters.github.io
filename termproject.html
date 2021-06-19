@@ -7,13 +7,13 @@
 			<!--  I added this charset because the validator was giving me an error.
 			I googled online and this is what I found to avoid the error -->
 			<meta charset="utf-8">
-			<meta name="viewport" content="width=device-width", initial-scale="1">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 			<script src="js/projectjs.js" defer></script>
 		</head>
 		<body>
 			<!-- Using this as a banner image at the top of main Bio page -->
-			<nav class="topnav" id="myTopNav" class="main">
+			<nav class="topnav" id="myTopNav">
 				<a href="termproject.html" class="active">Home</a>
 				<a href="resume.html">Resume</a>
 				<a href="travel.html">Photos</a>
@@ -23,51 +23,57 @@
 						<i class="fa fa-bars"></i>
 				</a>
 			</nav>
-			<img src="images/headshot_cs601.jpeg" alt="Headshot image of Rob Peters" class="center-resume" style="max-width:100%;height:auto;">
-			<main class="main">
-			<p>Hi - my name is Rob Peters and welcome to my website! I grew up with a small family in Lancaster County, PA.
-			My sister, three years my senior, joined the marching
-			band her freshmen year and I followed in her footsteps three years later. From then on my weekends were filled with
-			football games, band competitions, and friendships that have endured for 25+ years. Every summer I would
-			spend two weeks, which at the time felt like a lifetime, at the Jersey Shore. The sun-soaked and carefree
-			days spent on the beaches with evenings spent exploring the boardwalk in Wildwood and Ocean City.
-			</p>
-			<p>Having grown up in a mostly sheltered small town, when it came time to select a college to attend I thought I
-			might try to expand my horizons by picking a school in a larger city. However, when I visited Dickinson College, nestled in
-			Carlisle, PA, I was immediately at ease on its tree lined and limestone walled campus and felt like I was at home.
-			When I entered college I really had no idea what I wanted to do with my life or even what I wanted to major in.
-			During my freshman year I had an excellent Calculus Professor who inspired me to want to pursue Mathematics. It
-			was a subject area that was well suited for me and helped hone my analytical skills that would prove
-			invaluable in my career in the software implementation industry.
-			</p>
-			<!-- Career background sub-section of biography page with link to company website-->
-			<p>Similar to the position I found myself in four years previously, I really wasn't sure what direction
-			I wanted to move in once I finished college. This resulted in my staying close to home and taking a job
-			that had no relation to my schooling, but I was excited to have my first real job. It wasn't long before
-			I realized that it wasn't the direction I wanted to go in life but it did expose me to my first real
-			software applications. I was intrigued by how they worked and decided that it was an area that I was
-			interested in pursuing in more detail.
-			</p>
-			<p>I decided to pursue this track and was able to land my first job with a technology firm testing and
-			installing software on mainframe systems. Unfortunately, this job wasn't as exciting as I had hoped,
-			and it was short lived due to the nature of it being a government contract. However, I was able
-			to make an internal transfer within the company as a data analyst in the pension outsourcing industry. I
-			didn't have any particular affinity to pensions or the way that they worked, but I was enthralled with
-	    	learning about the system and its underlying technology. It was my first experience with a database and
-	    	I loved learning everything I could about system analysis, design, SQL, and many other aspects. Fifteen
-	    	years later I am still working in the same industry and have become a respected Senior Implementation
-	    	Consultant at <a href="http://www.lifeworks.com" target="_blank">LifeWorks</a> (opens in a new window).
-	    	For a more detailed look at my career and skillset please view my <a href="resume.html">resume</a>.
-			</p>
-			<!-- Personal info sub-section of biography page links to Recipes and Travel sections -->
-			<p>After starting to work from home full time in 2010 I have moved around a few times and ultimately
-			made my home in Fort Lauderdale, FL. I enjoy not having to deal with snow and being near the beach reminds
-			me of those summers I used to spend by the ocean in New Jersey. Outside of work two of my biggest passions
-			are travel and cooking. I encourage you to check out my <a href="travel.html">travel</a> page which
-			includes some photos of the various places I have had the pleasure to visit. Additionally, my
-			<a href="cooking.html">recipes</a> page has some of my favorite meals that I have cooked for friends
-			over the last few years. Both pages will be updated with additional content as time permits.
-		</main>
-			<!-- Site Map used to link to all other pages using relative URL, repeated on each page -->
+		<div class="home-grid">
+			<div class="home1">
+				<img src="images/headshot_cs601_full.jpeg" alt="Headshot image of Rob Peters" class="headshot" style="max-width:100%;height:auto;">
+				<img src="images/headshot_mobile.jpeg" alt="Headshot image of Rob Peters" class="headshot-mobile">
+			</div>
+			<div class="home2">
+				<main class="main">
+				<p>Hi - my name is Rob Peters and welcome to my website! I grew up with a small family in Lancaster County, PA.
+				My sister, three years my senior, joined the marching
+				band her freshmen year and I followed in her footsteps three years later. From then on my weekends were filled with
+				football games, band competitions, and friendships that have endured for 25+ years. Every summer I would
+				spend two weeks, which at the time felt like a lifetime, at the Jersey Shore. The sun-soaked and carefree
+				days spent on the beaches with evenings spent exploring the boardwalk in Wildwood and Ocean City.
+				</p>
+				<p>Having grown up in a mostly sheltered small town, when it came time to select a college to attend I thought I
+				might try to expand my horizons by picking a school in a larger city. However, when I visited Dickinson College, nestled in
+				Carlisle, PA, I was immediately at ease on its tree lined and limestone walled campus and felt like I was at home.
+				When I entered college I really had no idea what I wanted to do with my life or even what I wanted to major in.
+				During my freshman year I had an excellent Calculus Professor who inspired me to want to pursue Mathematics. It
+				was a subject area that was well suited for me and helped hone my analytical skills that would prove
+				invaluable in my career in the software implementation industry.
+				</p>
+				<!-- Career background sub-section of biography page with link to company website-->
+				<p>Similar to the position I found myself in four years previously, I really wasn't sure what direction
+				I wanted to move in once I finished college. This resulted in my staying close to home and taking a job
+				that had no relation to my schooling, but I was excited to have my first real job. It wasn't long before
+				I realized that it wasn't the direction I wanted to go in life but it did expose me to my first real
+				software applications. I was intrigued by how they worked and decided that it was an area that I was
+				interested in pursuing in more detail.
+				</p>
+				<p>I decided to pursue this track and was able to land my first job with a technology firm testing and
+				installing software on mainframe systems. Unfortunately, this job wasn't as exciting as I had hoped,
+				and it was short lived due to the nature of it being a government contract. However, I was able
+				to make an internal transfer within the company as a data analyst in the pension outsourcing industry. I
+				didn't have any particular affinity to pensions or the way that they worked, but I was enthralled with
+		    	learning about the system and its underlying technology. It was my first experience with a database and
+		    	I loved learning everything I could about system analysis, design, SQL, and many other aspects. Fifteen
+		    	years later I am still working in the same industry and have become a respected Senior Implementation
+		    	Consultant at <a href="http://www.lifeworks.com" target="_blank">LifeWorks</a> (opens in a new window).
+		    	For a more detailed look at my career and skillset please view my <a href="resume.html">resume</a>.
+				</p>
+				<!-- Personal info sub-section of biography page links to Recipes and Travel sections -->
+				<p>After starting to work from home full time in 2010 I have moved around a few times and ultimately
+				made my home in Fort Lauderdale, FL. I enjoy not having to deal with snow and being near the beach reminds
+				me of those summers I used to spend by the ocean in New Jersey. Outside of work two of my biggest passions
+				are travel and cooking. I encourage you to check out my <a href="travel.html">travel</a> page which
+				includes some photos of the various places I have had the pleasure to visit. Additionally, my
+				<a href="cooking.html">recipes</a> page has some of my favorite meals that I have cooked for friends
+				over the last few years. Both pages will be updated with additional content as time permits.
+			</main>
+			</div>
+		</div>
 		</body>
 	</html>
