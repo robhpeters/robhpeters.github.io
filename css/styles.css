@@ -148,15 +148,15 @@ a:hover{
     text-align: left;
   }
 }
-/*
+
 .main{
 	width: 50%;
 	margin-left: 25%;
-	margin-top: 50px;
+	margin-top: 30px;
 }
-*/
+
 .slider{
-	margin: 50px auto;
+	margin: 5px auto;
 	width: 50%;
 }
 
@@ -175,13 +175,22 @@ a:hover{
 	margin: 10px auto;
 }
 
+.btn-next{
+	float: right;
+	margin-right: 0px;
+}
+
 .btn:hover{
 	background:rgb(46,116,181);
 }
 
 .headshot {
 	display: block;
-	margin: 50px auto auto;
+	margin: 30px auto auto;
+}
+
+.headshot-mobile{
+	display:none;
 }
 
 /* Build grid for Resume */
@@ -207,7 +216,8 @@ a:hover{
 	background-color: #8888;
 	color: #ddd;
 	padding-left: 20px;
-	grid-template-columns: 20% 25% 25% 17%;
+	padding-right: 5px;
+	grid-template-columns: 20% 25% 25% 22.5%;
 	margin-left: 17%;
 	margin-right: 17%;
 	margin-top: 30px;
@@ -216,6 +226,7 @@ a:hover{
 .resume-heading {
 	text-align: center;
 	background-color: rgb(46,116,181);
+	margin-right: 0px;
 }
 
 .resume-list > li{
@@ -243,8 +254,94 @@ a:hover{
 	.resume-heading {
 		margin-right: 20px;
 	}
+	.home-grid{
+		margin: top 30px;
+		margin-left: 0px;
+		margin-right: 0px;
+		padding: auto;
+		grid-gap: 0px;
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			"home1"
+			"home2";
+	}
+	.headshot {
+		display: none;
+	}
+	.headshot-mobile {
+		display: block;
+		margin-top: 20px;
+		margin-left: 0px;
+		margin-righ: 0px;
+	}
+	.main{
+		margin-left: 5px;
+		margin-right: 5px;
+		width: auto;
+	}
+	.btn-next{
+		float: none;
+		margin-right: 0px;
+	}
 }
 
+/* Build grid for Home Page */
+.home1 { grid-area: home1; }
+.home2 { grid-area: home2; }
+
+.home-grid {
+	display: grid;
+	grid-template-areas:
+		'home1'
+		'home2';
+	grid-gap: 25px;
+	background-color: #8888;
+	color: #ddd;
+	padding-left: 20px;
+	grid-template-columns: 1fr;
+	margin-left: 17%;
+	margin-right: 17%;
+	margin-top: 30px;
+	justify-content: center;
+}
+
+/* Build grid for Photos page */
+
+.photo1 { grid-area: photo1; }
+.photo2 { grid-area: photo2; }
+
+.photos-grid {
+	display: grid;
+	grid-template-areas:
+		'photo1'
+		'photo2';
+	grid-gap: 25px;
+	background-color: #8888;
+	color: #ddd;
+	padding-left: 20px;
+	grid-template-columns: auto;
+	margin-left: 17%;
+	margin-right: 17%;
+	margin-top: 30px;
+}
+
+/* Contact Grid */
+.contact1 { grid-area: contact1; }
+
+.contact-grid {
+	display: grid;
+	grid-template-areas:
+		'contact1';
+	grid-gap: 25px;
+	background-color: #8888;
+	color: #ddd;
+	padding-left: 20px;
+	grid-template-columns: auto;
+	margin-left: 17%;
+	margin-right: 17%;
+	margin-top: 30px;
+}
+/* Styling for figure and fig caption on Photos page */
 figure {
 	display: inline-block;
 	margin: 0px;
@@ -255,4 +352,6 @@ figcaption {
 	font-style: italic;
 }
 
-
+.form-control{
+	width: 500px;
+}
