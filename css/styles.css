@@ -7,21 +7,6 @@ body{
 	color: #ddd;
 }
 
-/* create center, using for image at top of bio page*/
-.center-banner{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
-}
-
-.center-resume{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 375px;
-}
-
 .resume-h1 {
 	font-style: italic;
 	color: rgb(46,116,181);
@@ -163,13 +148,13 @@ a:hover{
     text-align: left;
   }
 }
-
+/*
 .main{
 	width: 50%;
 	margin-left: 25%;
 	margin-top: 50px;
 }
-
+*/
 .slider{
 	margin: 50px auto;
 	width: 50%;
@@ -240,7 +225,9 @@ a:hover{
 /* make Resume page responsive */
 @media screen and (max-width: 600px){
 	.resume-grid{
-		margin: top 30px auto;
+		margin: top 30px;
+		margin-left: 0px;
+		margin-right: 0px;
 		padding: auto;
 		grid-gap: 0px;
 		grid-template-columns: 1fr;
@@ -267,4 +254,5 @@ figcaption {
 	text-align: center;
 	font-style: italic;
 }
+
 
