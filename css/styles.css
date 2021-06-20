@@ -508,14 +508,14 @@ figcaption {
 		justify-content: center;
 	}
 	.recipe-ins {
-		margin-left: 3%;
-		margin-right: 3%;
+		margin-left: 5%;
+		margin-right: 5%;
 		align-items: center;
 		justify-content: center;
 	}
 
 	.recipe-pic{
-		margin-left: 1%;
+		margin-left: 3%;
 		margin-right: 3%;
 		display: flex;
 		position: relative;
@@ -524,12 +524,13 @@ figcaption {
 	}
 
 	.recipe-title{
-		margin-left: 1%;
-		margin-right: 0%;
+		margin-left: 3%;
+		margin-right: 3%;
 	}
 
 	.recipe-intro{
-		margin-left: 3%;
+		margin-left: 4%;
+		margin-right: 3%;
 	}
 
 }
