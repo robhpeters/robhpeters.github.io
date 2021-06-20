@@ -543,6 +543,11 @@ figcaption {
 		display: none;
 	}
 
+	.recipe-intro > p {
+		display: flex;
+		position: relative;
+	}
+
 }
 
 /* Contact Grid */
