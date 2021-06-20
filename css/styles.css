@@ -367,7 +367,7 @@ figcaption {
 		}
 
 		.photo1{
-			margin-left: .5%;
+			margin-left: 2%;
 			margin-right: 5%;
 			display: flex;
 			position: relative;
@@ -376,7 +376,7 @@ figcaption {
 		}
 
 		.photo2{
-			margin-left: .5%;
+			margin-left: 2%;
 			margin-right: 7%;
 			display: flex;
 			position: relative;
