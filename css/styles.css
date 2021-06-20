@@ -157,35 +157,6 @@ a:hover{
 	margin: auto;
 }
 
-.slider{
-	margin: 5px auto;
-	width: 50%;
-}
-
-.img-box img{
-	width: 100%;
-}
-
-.btn{
-	border:none;
-	outline:none;
-	background:#8888;
-	padding: 10px 30px;
-	font-size:20px;
-	color: #ddd;
-	cursor: pointer;
-	margin: 10px auto;
-}
-
-.btn-next{
-	float: right;
-	margin-right: 0px;
-}
-
-.btn:hover{
-	background:rgb(46,116,181);
-}
-
 .headshot {
 	align-items: center;
 	justify-content: center;
@@ -193,6 +164,7 @@ a:hover{
 	display: flex;
 }
 
+/* mobile version of headshot picture */
 .headshot-mobile{
 	display:none;
 }
@@ -216,12 +188,12 @@ a:hover{
 		'item5 item4 item4 item4'
 		'item6 item6 item6 item6'
 		'item7 item7 item7 item7';
-	grid-gap: 25px;
+	grid-gap: 30px;
 	background-color: #8888;
 	color: #ddd;
 	padding-left: 20px;
 	padding-right: 5px;
-	grid-template-columns: 20% 25% 25% 20%;
+	grid-template-columns: 25% 25% 25% 13%;
 	margin-left: 17%;
 	margin-right: 17%;
 	margin-top: 30px;
@@ -271,6 +243,10 @@ a:hover{
 }
 
 /* Build grid for Home Page */
+.home-header{
+	grid-area: home-header;
+}
+
 .home1 {
 	grid-area: home1;
 	display: flex;
@@ -279,17 +255,24 @@ a:hover{
 	justify-content: center;
 	margin-top: 30px;
 }
+
 .home2 {
 	grid-area: home2;
 	margin-left: 200px;
 	margin-right: 200px;
 	}
 
+	.home-footer{
+		grid-area: home-footer;
+	}
+
 .home-grid {
 	display: grid;
 	grid-template-areas:
+		'home-header'
 		'home1'
-		'home2';
+		'home2'
+		'home-footer';
 	grid-gap: 25px;
 	background-color: #8888;
 	color: #ddd;
@@ -322,15 +305,41 @@ a:hover{
 	}
 
 /* Build grid for Photos page */
+.photo-header{
+	grid-area: photo-header;
+}
 
-.photo1 { grid-area: photo1; }
-.photo2 { grid-area: photo2; }
+.photo1 {
+	grid-area: photo1;
+	display: flex;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.photo2 {
+	grid-area: photo2;
+	display: flex;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	/*margin-top: 30px;*/
+	margin-right: 2%;
+}
+
+.photo-footer{
+	grid-area: photo-footer;
+}
 
 .photos-grid {
 	display: grid;
 	grid-template-areas:
+		'photo-header'
 		'photo1'
-		'photo2';
+		'photo2'
+		'photo-footer';
 	grid-gap: 25px;
 	background-color: #8888;
 	color: #ddd;
@@ -340,6 +349,60 @@ a:hover{
 	margin-right: 17%;
 	margin-top: 30px;
 }
+
+.img-box img{
+	width: 100%;
+}
+
+/* Styling for figure and fig caption on Photos page */
+figure {
+	display: inline-block;
+	margin: 0px;
+}
+
+figcaption {
+	text-align: center;
+	font-style: italic;
+}
+
+.btn{
+	border:none;
+	outline:none;
+	background:#8888;
+	padding: 10px 30px;
+	font-size:20px;
+	color: #ddd;
+	cursor: pointer;
+	margin: 10px auto;
+}
+
+.btn-next{
+	float: right;
+	margin-right: 0px;
+}
+
+.btn:hover{
+	background:rgb(46,116,181);
+}
+
+/* Make Photos page responsive */
+@media screen and (max-width: 600px){
+		.photos-grid {
+			margin-left: 2%;
+			margin-right: 2%;
+			padding: auto;
+		}
+
+		.photo1{
+			margin-left: 15px;
+			margin-right: 15px;
+		}
+
+		.photo2{
+			margin-left: 15px;
+			margin-right: 15px;
+		}
+	}
 
 /* Contact Grid */
 .contact1 { grid-area: contact1; }
@@ -357,16 +420,7 @@ a:hover{
 	margin-right: 17%;
 	margin-top: 30px;
 }
-/* Styling for figure and fig caption on Photos page */
-figure {
-	display: inline-block;
-	margin: 0px;
-}
 
-figcaption {
-	text-align: center;
-	font-style: italic;
-}
 
 .form-control{
 	width: 500px;
