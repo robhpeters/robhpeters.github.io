@@ -515,29 +515,14 @@ figcaption {
 
 }*/
 
-media screen and (max-width: 600px){
+@media screen and (max-width: 600px){
 	.recipes-grid{
 		margin-left: 2%;
 		margin-right: 2%;
 		padding: 10px;
 		grid-template-columns: 1fr;
 		grid-template-areas:
-			"recipe-header"
-			"recipe-intro"
-			"recipe1-title"
-			"recipe1-pic"
-			"recipe1-ing"
-			"recipe1-ins"
-			"recipe2-title"
-			"recipe2-pic"
-			"recipe2-ing"
-			"recipe2-ins"
-			"recipe3-title"
-			"recipe3-pic"
-			"recipe3-ing"
-			"recipe3-ins"
-			"recipe-footer"
-			"recipe-footer2";
+			"recipe1-pic";
 		}
 }
 
