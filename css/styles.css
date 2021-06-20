@@ -186,11 +186,6 @@ a:hover{
 	.resume-heading {
 		margin-right: 20px;
 	}
-
-	.btn-next{
-		float: none;
-		margin-right: 0px;
-	}
 }
 
 /* Build grid for Home Page */
@@ -427,8 +422,8 @@ figcaption {
 	text-align: center;
 	background-color: rgb(46,116,181);
 	font-weight: bold;
-	line-height: 2em;
-	margin-right: 2%;
+	/*line-height: 2em;*/
+	/*margin-right: 2%; */
 
 }
 
@@ -520,9 +515,50 @@ figcaption {
 		margin-left: 2%;
 		margin-right: 2%;
 		padding: 10px;
-		grid-template-columns: 1fr;
+		grid-template-columns: 1fr 0;
 		grid-template-areas:
-			"recipe1-pic";
+			'recipe1-title'
+			'recipe1-pic';
+		}
+		.recipe1-pic{
+			margin-left: 12%;
+			margin-right: 2%;
+			display: flex;
+			position: relative;
+			align-items: center;
+			justify-content: center;
+
+		}
+		.recipe-intro{
+			display: none;
+		}
+		.recipe-ing{
+			display:none;
+		}
+		.recipe-ins{
+			display: none;
+		}
+		.recipe-footer{
+			display: none;
+		}
+		.recipe2-pic{
+			display:none;
+		}
+		.recipe3-pic{
+			display: none;
+		}
+		.recipe-title {
+			display: none;
+		}
+		.recipe1-title{
+			display: flex;
+			position: relative;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			margin-right: 0%;
+			font-size: .9em;
+			width: 122%;
 		}
 }
 
