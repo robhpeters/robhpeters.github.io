@@ -147,8 +147,8 @@ a:hover{
   }
 
 	.topnav{
-		margin-left: 5%;
-		margin-right: 5%;
+		margin-left: 2%;
+		margin-right: 2%;
 	}
 }
 
@@ -241,8 +241,8 @@ a:hover{
 @media screen and (max-width: 600px){
 	.resume-grid{
 		margin: top 30px;
-		margin-left: 0px;
-		margin-right: 0px;
+		margin-left: 2%;
+		margin-right: 2%;
 		padding: auto;
 		grid-gap: 0px;
 		grid-template-columns: 1fr;
@@ -302,8 +302,8 @@ a:hover{
 /* Make Home page responsive */
 @media screen and (max-width: 600px){
 		.home-grid {
-			margin-left: 5%;
-			margin-right: 5%;
+			margin-left: 2%;
+			margin-right: 2%;
 			padding: auto;
 		}
 		.headshot {
