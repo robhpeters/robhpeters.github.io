@@ -575,7 +575,7 @@ figcaption {
 
 @media screen and (max-width: 600px){
 	.projMessage {
-		width: auto;
+		width: 50%;
 	}
 	.contact-grid{
 		margin-left: 2%;
