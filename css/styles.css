@@ -394,13 +394,21 @@ figcaption {
 		}
 
 		.photo1{
-			margin-left: 15px;
-			margin-right: 15px;
+			margin-left: .5%;
+			margin-right: 5%;
+			display: flex;
+			position: relative;
+			align-items: center;
+			justify-content: center;
 		}
 
 		.photo2{
-			margin-left: 15px;
-			margin-right: 15px;
+			margin-left: .5%;
+			margin-right: 6%;
+			display: flex;
+			position: relative;
+			align-items: center;
+			justify-content: center;
 		}
 	}
 
