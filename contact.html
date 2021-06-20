@@ -11,6 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="js/projectjs.js" defer></script>
+
 </head>
 <body>
   <nav class="topnav" id="myTopNav">
@@ -24,29 +25,34 @@
     </a>
   </nav>
   <div class="contact-grid">
+    <div class="contact-header"></div>
     <div class="contact1">
-    <h3>Contact Me</h3>
-    <form id="form-id" class="name-class" method="post" action="">
-            <label for="Name" class="form-label">Your name</label>
-            <div class="input-group">
-                <input type="text" id="Name" name="Name" class="form-control" required>
-            </div>
-        <div class="form-group">
-            <label for="Email" class="form-label">Your email address</label>
-            <div class="input-group">
-                <input type="email" id="Email" name="Email" class="form-control" required>
-            </div>
-        <div class="form-group">
-            <label for="Message" class="formlabel">Your message</label>
-            <div class="input-group">
-                <textarea id="Message" name="Message" class="form-control" rows="6" maxlength="3000" required></textarea>
-            </div>
-        </div>
-        <div class="form-group">
-            <button type="submit" id="fcf-button" class="btn">Send</button>
-        </div>
+      <form name="projForm" id="projForm" method="post" onsubmit="return validateForm();">
+    		<label for="firstName">Enter your first name (alpha 2 character minimum):</label>
+    		<input type="text" name="firstName" id="firstName" required>
+    		<span></span>
+    		<div id="firstNameError" class="errors"></div>
+    		<p></p>
+
+    		<label for="lastName">Enter your last name (alpha 2 character minimum):</label>
+    		<input type="text" name="lastName" id="lastName" required>
+    		<span></span>
+    		<div id="lastNameError" class="errors"></div>
+    	   <p></p>
+         <label for="email">Enter your e-mail address:</label>
+     		<input type="email" name="email" id="email" required>
+     		<span></span>
+        <p></p>
+
+         <label for="message">Message</label>
+         <p/>
+         <textarea id="projMessage" class="projMessage" maxlength="3000" rows="6" wrap="soft"></textarea>
+
+  		<p><input type="submit" name="submit" id="submit" value="Submit" class="btn"></p>
+      <p id="response"></p>
+    	</form>
       </div>
+      <div class="contact-footer"></div>
   </div>
 </body>
 </html>
-
