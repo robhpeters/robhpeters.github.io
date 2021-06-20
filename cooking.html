@@ -5,7 +5,7 @@
 			<link href="css/styles.css" type="text/css" rel="stylesheet"/>
 			<link href="css/printstyles.css" type="text/css" rel="stylesheet" media="print">
 			<meta charset="utf-8">
-			<meta name="viewport" content="width=device-width", initial-scale="1">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 			<script src="js/projectjs.js" defer></script>
 		</head>
@@ -32,15 +32,15 @@
 			</div>
 			<div class="recipe1-title recipe-title">Chicken Thighs with Creamy Mustard Sauce</div>
 			<div class="recipe1-pic recipe-pic">
-				<figure class="recipe-photo">
-					<img src="images/chickenthighs.jpeg" alt="Chicken thighs in a creamy mustard sauce">
+				<figure>
+					<img src="images/chickenthighs.jpeg" alt="Chicken thighs in a creamy mustard sauce" style="max-width:100%;height:auto;">
 					<br />
 					<figcaption>Chicken Thighs in a creamy mustard sauce</figcaption>
 				</figure>
 			</div>
-			<div class="recipe1-ing recipe-ing">
+			<div class="recipe-ing">
 				<ul>
-					<li v-for="ingredient in creamychicken">{{ ingredient }}</li>
+					<li class="recipe1-ing" v-for="ingredient in creamychicken">{{ ingredient }}</li>
 				</ul>
 			</div>
 			<div class="recipe1-ins recipe-ins">
@@ -60,8 +60,8 @@
 			</div>
 			<div class="recipe2-title recipe-title">Weeknight Bolognese</div>
 			<div class="recipe2-pic recipe-pic">
-				<figure class="recipe-photo">
-					<img src="images/bolognese.jpeg" alt="Bolognese pasta with fresh Parmesan">
+				<figure>
+					<img src="images/bolognese.jpeg" alt="Bolognese pasta with fresh Parmesan" style="max-width:100%;height:auto;">
 					<br />
 					<figcaption>Bolognese pasta with fresh Parmesan</figcaption>
 				</figure>
@@ -88,8 +88,8 @@
 			<!-- recipe 3 panna cotta -->
 			<div class="recipe3-title recipe-title">Panna Cotta with fresh Raspberry Sauce</div>
 			<div class="recipe3-pic recipe-pic">
-				<figure class="recipe-photo">
-					<img src="images/pannacotta.jpeg" alt="Panna Cotta with Fresh Raspberries">
+				<figure>
+					<img src="images/pannacotta.jpeg" alt="Panna Cotta with Fresh Raspberries" style="max-width:100%;height:auto;">
 					<br />
 					<figcaption>Panna Cotta at Christmas</figcaption>
 				</figure>
