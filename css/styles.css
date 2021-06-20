@@ -456,7 +456,6 @@ figcaption {
 
 .recipe-ing{
 	display: flex;
-	position: relative;
 	align-items:flex-start;
 	margin-right: 3%;
 	margin-left: -3rem;
@@ -503,7 +502,6 @@ figcaption {
 		margin-left: 2%;
 		margin-right: 2%;
 		display: flex;
-		position: relative;
 		align-items: center;
 		justify-content: center;
 	}
@@ -519,7 +517,6 @@ figcaption {
 		margin-left: 5%;
 		margin-right: 5%;
 		display: flex;
-		position: relative;
 		align-items: center;
 		justify-content: center;
 	}
@@ -527,7 +524,6 @@ figcaption {
 	.recipe-title{
 		margin-left: 2%;
 		margin-right: 2%;
-		position: relative;
 		align-items: center;
 		justify-content: center;
 	}
@@ -535,7 +531,6 @@ figcaption {
 	.recipe-intro{
 		margin-left: 5%;
 		margin-right: 5%;
-		position: relative;
 		align-items: center;
 		justify-content: center;
 	}
@@ -575,7 +570,7 @@ figcaption {
 
 @media screen and (max-width: 600px){
 	.projMessage {
-		width: 50%;
+		width: auto;
 	}
 	.contact-grid{
 		margin-left: 2%;
