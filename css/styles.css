@@ -496,10 +496,8 @@ figcaption {
 			"recipe3-ing"
 			"recipe3-ins"
 			"recipe-footer"
-			"recipe-footer2"
-			;
-
-	}
+			"recipe-footer2";
+		}
 
 	.recipe-ing {
 		margin-left: 2%;
@@ -512,6 +510,7 @@ figcaption {
 	.recipe-ins {
 		margin-left: 5%;
 		margin-right: 5%;
+		display:inline;
 		align-items: center;
 		justify-content: center;
 	}
@@ -545,11 +544,15 @@ figcaption {
 
 /* Contact Grid */
 .contact1 { grid-area: contact1; }
+.contact-header {grid-area: contact-header; }
+.contact-footer {grid-area: contact-footer; }
 
 .contact-grid {
 	display: grid;
 	grid-template-areas:
-		'contact1';
+		'contact-header'
+		'contact1'
+		'contact-footer';
 	grid-gap: 25px;
 	background-color: #8888;
 	color: #ddd;
@@ -561,6 +564,41 @@ figcaption {
 }
 
 
-.form-control{
-	width: 500px;
+.projMessage {
+	width: 550px;
+}
+
+.errors{
+	font-style: italic;
+	color: Crimson;
+}
+
+@media screen and (max-width: 600px){
+	.projMessage {
+		width: auto;
+	}
+}
+
+input + span {
+  position: relative;
+}
+
+input + span::before {
+  position: absolute;
+  right: -20px;
+  top: 5px;
+}
+
+input:invalid {
+  border: 2px solid red;
+}
+
+input:invalid + span::before {
+  content: '✖';
+  color: red;
+}
+
+input:valid + span::before {
+  content: '✓';
+  color: green;
 }
