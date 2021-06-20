@@ -528,11 +528,17 @@ figcaption {
 	.recipe-title{
 		margin-left: 2%;
 		margin-right: 2%;
+		position: relative;
+		align-items: center;
+		justify-content: center;
 	}
 
 	.recipe-intro{
 		margin-left: 5%;
 		margin-right: 5%;
+		position: relative;
+		align-items: center;
+		justify-content: center;
 	}
 
 }
