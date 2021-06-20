@@ -536,6 +536,14 @@ figcaption {
 		display: flex;
 	}
 
+	.recipe-footer {
+		display: none;
+	}
+
+	.recipe-footer2{
+		display: none;
+	}
+
 }
 
 /* Contact Grid */
