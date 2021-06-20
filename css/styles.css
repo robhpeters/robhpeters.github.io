@@ -506,10 +506,7 @@ figcaption {
 		align-items: center;
 		justify-content: center;
 	}
-	.recipe-pic > figure {
-		display: flex;
-		position: relative;
-	}
+
 
 	.recipe-title{
 		margin-left: 2%;
