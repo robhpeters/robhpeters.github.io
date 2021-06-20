@@ -366,15 +366,21 @@ figcaption {
 
 .recipe1-title {
 	grid-area: recipe1-title;
+	grid-column: 1 / span 2;
  }
 .recipe1-pic { grid-area: recipe1-pic; }
 .recipe1-ing { grid-area: recipe1-ing; }
 .recipe1-ins { grid-area: recipe1-ins; }
-.recipe2-title { grid-area: recipe2-title; }
+.recipe2-title {
+	grid-area: recipe2-title;
+	grid-column: 1 / span 2;
+ }
 .recipe2-pic { grid-area: recipe2-pic; }
 .recipe2-ing { grid-area: recipe2-ing; }
 .recipe2-ins { grid-area: recipe2-ins; }
-.recipe3-title { grid-area: recipe3-title; }
+.recipe3-title {
+	grid-area: recipe3-title;
+ 	grid-column: 1 /span 2;}
 .recipe3-pic { grid-area: recipe3-pic; }
 .recipe3-ing { grid-area: recipe3-ing; }
 .recipe3-ins { grid-area: recipe3-ins; }
@@ -553,12 +559,13 @@ figcaption {
 		.recipe1-title{
 			display: flex;
 			position: relative;
+			grid-column: 1 / span 1;
 			align-items: center;
 			justify-content: center;
 			text-align: center;
 			margin-right: 0%;
 			font-size: .9em;
-			width: 85%;
+			width: 122%;
 		}
 }
 
