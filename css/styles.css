@@ -188,7 +188,7 @@ a:hover{
 		margin-top: 30px;
 		margin-left: 2%;
 		margin-right: 2%;
-		padding: 1px;
+		padding: 10px;
 		grid-gap: 0px;
 		grid-template-columns: 1fr;
 		grid-template-areas:
@@ -260,7 +260,7 @@ a:hover{
 		.home-grid {
 			margin-left: 2%;
 			margin-right: 2%;
-			padding: 1px;
+			padding: 10px;
 		}
 		.headshot {
 			display: none;
@@ -363,7 +363,7 @@ figcaption {
 		.photos-grid {
 			margin-left: 2%;
 			margin-right: 2%;
-			padding: 1px;
+			padding: 10px;
 		}
 
 		.photo1{
@@ -478,7 +478,7 @@ figcaption {
 	.recipes-grid{
 		margin-left: 2%;
 		margin-right: 2%;
-		padding: 1px;
+		padding: 10px;
 		grid-template-columns: 1fr;
 		grid-template-areas:
 			"recipe-header"
