@@ -185,10 +185,10 @@ a:hover{
 /* make Resume page responsive */
 @media screen and (max-width: 600px){
 	.resume-grid{
-		margin: top 30px;
+		margin-top: 30px;
 		margin-left: 2%;
 		margin-right: 2%;
-		padding: auto;
+		padding: 1px;
 		grid-gap: 0px;
 		grid-template-columns: 1fr;
 		grid-template-areas:
@@ -260,7 +260,7 @@ a:hover{
 		.home-grid {
 			margin-left: 2%;
 			margin-right: 2%;
-			padding: auto;
+			padding: 1px;
 		}
 		.headshot {
 			display: none;
@@ -363,7 +363,7 @@ figcaption {
 		.photos-grid {
 			margin-left: 2%;
 			margin-right: 2%;
-			padding: auto;
+			padding: 1px;
 		}
 
 		.photo1{
@@ -478,7 +478,7 @@ figcaption {
 	.recipes-grid{
 		margin-left: 2%;
 		margin-right: 2%;
-		padding: auto;
+		padding: 1px;
 		grid-template-columns: 1fr;
 		grid-template-areas:
 			"recipe-header"
