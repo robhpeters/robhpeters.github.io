@@ -452,7 +452,7 @@ figcaption {
 
 /* Responsive Recipe Page */
 /* Make all one column */
-/*@media screen and (max-width: 600px){
+@media screen and (max-width: 600px){
 	.recipes-grid{
 		margin-left: 2%;
 		margin-right: 2%;
@@ -514,58 +514,18 @@ figcaption {
 		justify-content: center;
 	}
 
-}*/
+	.recipe1-title {
+		grid-column: 1  span 1;
+	}
 
-@media screen and (max-width: 600px){
-	.recipes-grid{
-		margin-left: 2%;
-		margin-right: 2%;
-		padding: 10px;
-		grid-template-columns: 1fr 0;
-		grid-template-areas:
-			'recipe1-title'
-			'recipe1-pic';
-		}
-		.recipe1-pic{
-			margin-left: 12%;
-			margin-right: 2%;
-			display: flex;
-			position: relative;
-			align-items: center;
-			justify-content: center;
+	.recipe2-title {
+		grid-column: 1  span 1;
+	}
 
-		}
-		.recipe-intro{
-			display: none;
-		}
-		.recipe-ing{
-			display:none;
-		}
-		.recipe-ins{
-			display: none;
-		}
-		.recipe-footer{
-			display: none;
-		}
-		.recipe2-pic{
-			display:none;
-		}
-		.recipe3-pic{
-			display: none;
-		}
-		.recipe-title {
-			display: none;
-		}
-		.recipe1-title{
-			display: flex;
-			position: relative;
-			grid-column: 1 / span 1;
-			align-items: center;
-			justify-content: center;
-			text-align: center;
-			margin-right: 0%;
+	.recipe3-title {
+		grid-column: 1  span 1;
+	}
 
-		}
 }
 
 /* Contact Grid */
