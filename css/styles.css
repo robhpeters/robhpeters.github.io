@@ -480,7 +480,8 @@ figcaption {
 	.recipe-ing {
 		margin-left: 2%;
 		margin-right: 2%;
-		display: inline;
+		display: flex;
+		position: relative;
 		align-items: center;
 		justify-content: center;
 	}
@@ -488,6 +489,7 @@ figcaption {
 		margin-left: 5%;
 		margin-right: 5%;
 		display: inline;
+		position: relative;
 		align-items: center;
 		justify-content: center;
 	}
@@ -495,7 +497,8 @@ figcaption {
 	.recipe-pic{
 		margin-left: 5%;
 		margin-right: 5%;
-		display: inline;
+		display: flex;
+		position: relative;
 		align-items: center;
 		justify-content: center;
 	}
@@ -504,6 +507,7 @@ figcaption {
 		margin-left: 2%;
 		margin-right: 2%;
 		display: flex;
+		position: relative;
 		align-items: center;
 		justify-content: center;
 	}
@@ -512,6 +516,7 @@ figcaption {
 		margin-left: 5%;
 		margin-right: 5%;
 		display: flex;
+		position: relative;
 		align-items: center;
 		justify-content: center;
 	}
