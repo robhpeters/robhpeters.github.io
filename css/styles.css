@@ -479,6 +479,7 @@ figcaption {
 		margin-left: 2%;
 		margin-right: 2%;
 		padding: auto;
+		grid-template-columns: 1fr;
 		grid-template-areas:
 			"recipe-header"
 			"recipe-intro"
@@ -495,21 +496,22 @@ figcaption {
 			"recipe3-ing"
 			"recipe3-ins"
 			"recipe-footer"
-			"recipe-footer2";
+			"recipe-footer2"
+			;
 
 	}
 
 	.recipe-ing {
-		margin-left: 3%;
-		margin-right: 3%;
+		margin-left: 1%;
+		margin-right: 1%;
 		display: flex;
 		position: relative;
 		align-items: center;
 		justify-content: center;
 	}
 	.recipe-ins {
-		margin-left: 5%;
-		margin-right: 5%;
+		margin-left: 3%;
+		margin-right: 3%;
 		align-items: center;
 		justify-content: center;
 	}
@@ -524,8 +526,8 @@ figcaption {
 	}
 
 	.recipe-title{
-		margin-left: 3%;
-		margin-right: 3%;
+		margin-left: 1%;
+		margin-right: 1%;
 	}
 
 	.recipe-intro{
