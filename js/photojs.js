@@ -3,8 +3,8 @@ var img_slider = document.querySelector('.img-slider');
 const images = ['travela.jpeg', 'sydney.jpeg','christchurch.jpeg', 'queenstown.jpeg', 'milfordsound.jpeg',
               'colorhouse.jpeg','mist.jpeg','capegoodhope.jpeg','penguins.jpeg'];
 const captions = ['Blyde River Canyon South Africa', 'Sydney Harbor Bridge', 'Christchurch New Zealand',
-            'Queenstown New Zealand', 'Milford Sound New Zealand', 'Colorful Houses Cape Town',
-          'Mist South Africa', 'Cape of Good Hope South Africa', 'Penguins playing in Simons Town South Africa'];
+            'Queenstown New Zealand', 'Milford Sound New Zealand', 'Bo-Kapp Neighborhood Cape Town South Africa',
+          'Cape Town South Africa', 'Cape of Good Hope South Africa', 'Penguins playing in Simons Town South Africa'];
 var i=0; //current image index
 
 function prev(){
