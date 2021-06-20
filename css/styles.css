@@ -502,23 +502,23 @@ figcaption {
 	}
 
 	.recipe-ing {
-		margin-left: 1%;
-		margin-right: 1%;
+		margin-left: 2%;
+		margin-right: 2%;
 		display: flex;
 		position: relative;
 		align-items: center;
 		justify-content: center;
 	}
 	.recipe-ins {
-		margin-left: 3%;
-		margin-right: 3%;
+		margin-left: 5%;
+		margin-right: 5%;
 		align-items: center;
 		justify-content: center;
 	}
 
 	.recipe-pic{
-		margin-left: 3%;
-		margin-right: 3%;
+		margin-left: 5%;
+		margin-right: 5%;
 		display: flex;
 		position: relative;
 		align-items: center;
@@ -526,13 +526,13 @@ figcaption {
 	}
 
 	.recipe-title{
-		margin-left: 1%;
-		margin-right: 1%;
+		margin-left: 2%;
+		margin-right: 2%;
 	}
 
 	.recipe-intro{
-		margin-left: 4%;
-		margin-right: 3%;
+		margin-left: 5%;
+		margin-right: 5%;
 	}
 
 }
