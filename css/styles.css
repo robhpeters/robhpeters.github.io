@@ -485,10 +485,7 @@ figcaption {
 		align-items: center;
 		justify-content: center;
 	}
-	.recipe-ing > ul {
-		display: flex;
-		position: relative;
-	}
+
 	.recipe-ins {
 		margin-left: 5%;
 		margin-right: 5%;
