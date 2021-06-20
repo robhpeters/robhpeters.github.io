@@ -503,6 +503,7 @@ figcaption {
 	.recipe-title{
 		margin-left: 2%;
 		margin-right: 2%;
+		display: flex;
 		align-items: center;
 		justify-content: center;
 	}
@@ -517,14 +518,17 @@ figcaption {
 
 	.recipe1-title {
 		grid-column: 1  span 1;
+		display: flex;
 	}
 
 	.recipe2-title {
 		grid-column: 1  span 1;
+		display: flex;
 	}
 
 	.recipe3-title {
 		grid-column: 1  span 1;
+		display: flex;
 	}
 
 }
