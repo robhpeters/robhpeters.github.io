@@ -476,12 +476,9 @@ figcaption {
 /* Make all one column */
 @media screen and (max-width: 600px){
 	.recipes-grid{
-		margin: top 30px;
 		margin-left: 2%;
 		margin-right: 2%;
 		padding: auto;
-		grid-gap: 0px;
-		grid-template-columns: 1fr;
 		grid-template-areas:
 			"recipe-header"
 			"recipe-intro"
@@ -503,23 +500,21 @@ figcaption {
 	}
 
 	.recipe-ing {
-		margin-left: 0%;
-		margin-right: 2%;
+		margin-left: 3%;
+		margin-right: 3%;
 		display: flex;
 		position: relative;
 		align-items: center;
 		justify-content: center;
 	}
 	.recipe-ins {
-		margin-left: 2%;
-		margin-right: 2%;
-		display: flex;
-		position: relative;
+		margin-left: 3%;
+		margin-right: 3%;
 		align-items: center;
 		justify-content: center;
 	}
 
-	.recipe-photo{
+	.recipe-pic{
 		margin-left: 1%;
 		margin-right: 3%;
 		display: flex;
@@ -529,12 +524,12 @@ figcaption {
 	}
 
 	.recipe-title{
-		margin-left: 0%;
+		margin-left: 1%;
 		margin-right: 0%;
 	}
 
 	.recipe-intro{
-		margin-left: 2%;
+		margin-left: 3%;
 	}
 
 }
