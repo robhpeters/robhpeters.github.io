@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+	<html lang="en-us">
+		<head>
+			<title>Rob Peters: Photo Blog</title>
+			<link href="css/styles.css" type="text/css" rel="stylesheet">
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<script src="js/photojs.js" defer></script>
+			<script src="js/projectjs.js" defer></script>
+		</head>
+		<body>
+			<nav class="topnav" id="myTopNav">
+				<a href="index.html">Home</a>
+				<a href="resume.html">Resume</a>
+				<a href="travel.html" class="active">Photos</a>
+				<a href="cooking.html">Recipes</a>
+				<a href="contact.html">Contact</a>
+				<a href="javascript:void(0);" class="icon" onclick="navFunction();">
+						<i class="fa fa-bars"></i>
+				</a>
+			</nav>
+		<div class="photos-grid">
+			<div class="photo-header"></div>
+			<div class="photo1">
+				<p>I love to travel and I have been fortunate enough to travel to some amazing places around the world
+					including South Africa, Australia, New Zealand, and numerous places throughout Europe.
+					Please scroll through the below images to view some of the photos I have taken on my travels
+					around the globe. If you would like a printed copy of any of these photos please use the
+		  	Contact form which is linked in the navigation bar.</p>
+			</div>
+		<div class="photo2">
+		<!-- Image Slider -->
+		<div class = "slider">
+			<div class="img_box">
+				<figure>
+					<img src="images/travela.jpeg" alt="" class="img-slider" style="max-width:100%;height:auto;"/>
+					<br />
+					<figcaption id="img-caption">Blyde River Canyon</figcaption>
+				</figure>
+			</div>
+			<!-- Next/Prev buttons -->
+			<button class="btn" onclick="prev()">Prev</button>
+			<button class="btn btn-next" onclick="next()">Next</button>
+		</div>
+		<div class="photo-footer"></div>
+	</div>
+	</div>
+	</body>
+	</html>
