@@ -37,12 +37,12 @@ img {
 
 a:link {
 	text-decoration: none;
-	color: white;
+	color: deeppink;
 }
 
 a:visited{
 	text-decoration: none;
-	color: black;
+	color: rgb(46,116,181);
 }
 
 a:hover{
@@ -429,7 +429,7 @@ figcaption {
 	background-color: rgb(46,116,181);
 	font-weight: bold;
 	margin-right: 3%;
-	/*line-height: 2em;*/
+	line-height: 1.5em;
 	/*margin-right: 2%; */
 
 }
@@ -449,6 +449,12 @@ figcaption {
 
 .recipe-pic{
 	margin-top: 2%;
+}
+
+.footer-style{
+	text-align: center;
+	font-weight: bold;
+	margin-right: 3%;
 }
 
 /* Responsive Recipe Page */
@@ -524,19 +530,19 @@ figcaption {
 	}
 
 	.recipe1-title {
-		grid-column: 1  span 1;
+		grid-column: 1 / span 1;
 		display: flex;
 		margin-left: 3%;
 		margin-right: 3%;
 	}
 
 	.recipe2-title {
-		grid-column: 1  span 1;
+		grid-column: 1 / span 1;
 		display: flex;
 	}
 
 	.recipe3-title {
-		grid-column: 1  span 1;
+		grid-column: 1 / span 1;
 		display: flex;
 	}
 
