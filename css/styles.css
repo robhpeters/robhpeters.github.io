@@ -30,7 +30,7 @@ h1, h2{
 
 img {
 	border-style: solid;
-	border-width: medium;
+	border-width: 2px;
 	border-color: #ddd;
 }
 
@@ -301,10 +301,10 @@ a:hover{
 }
 
 /* Styling for figure and fig caption on Photos page */
-figure {
+/*figure {
 	display: inline-block;
 	margin: 0px;
-}
+} */
 
 figcaption {
 	text-align: center;
@@ -359,62 +359,29 @@ figcaption {
 	}
 
 /* Recipes Grid */
-.recipe-header {
-	grid-area: recipe-header;
-	margin-top: 2%;
- }
-
-.recipe1-title {
-	grid-area: recipe1-title;
-	grid-column: 1 / span 2;
- }
-.recipe1-pic { grid-area: recipe1-pic; }
-.recipe1-ing { grid-area: recipe1-ing; }
-.recipe1-ins { grid-area: recipe1-ins; }
-.recipe2-title {
-	grid-area: recipe2-title;
-	grid-column: 1 / span 2;
- }
-.recipe2-pic { grid-area: recipe2-pic; }
-.recipe2-ing { grid-area: recipe2-ing; }
-.recipe2-ins { grid-area: recipe2-ins; }
-.recipe3-title {
-	grid-area: recipe3-title;
- 	grid-column: 1 /span 2;}
-.recipe3-pic { grid-area: recipe3-pic; }
-.recipe3-ing { grid-area: recipe3-ing; }
-.recipe3-ins { grid-area: recipe3-ins; }
-.recipe-footer { grid-area: recipe-footer; }
-.recipe-footer2 { grid-area: recipe-footer2; }
-.recipe-intro {
-	grid-area: recipe-intro;
-	grid-column: 1 / span 2;
-	margin-right: 2%;
-	justify-content: center;
-}
-
-
 .recipes-grid {
 	display: grid;
 	grid-template-areas:
-		'recipe-header recipe-header'
-		'recipe-intro recipe-intro'
-		'recipe1-title recipe1-title'
-		'recipe1-pic recipe1-ing'
-		'recipe1-pic recipe1-ins'
-		'recipe2-title recipe2-title'
-		'recipe2-pic recipe2-ing'
-		'recipe2-pic recipe2-ins'
-		'recipe3-title recipe3-title'
-		'recipe3-pic recipe3-ing'
-		'recipe3-pic recipe3-ins'
-		'recipe-footer recipe-footer'
-		'recipe-footer2 recipe-footer2';
+		'recipe-intro'
+		'recipe1-title'
+		'recipe1-pic'
+		'recipe1-ing'
+		'recipe1-ins'
+		'recipe2-title'
+		'recipe2-pic'
+		'recipe2-ing'
+		'recipe2-ins'
+		'recipe3-title'
+		'recipe3-pic'
+		'recipe3-ing'
+		'recipe3-ins'
+		'recipe-footer';
+	grid-template-columns: 1fr 1fr;
 	background-color: #8888;
 	color: #ddd;
-	grid-gap: 25px;
-	padding-left: 20px;
-	padding-right: 5px;
+	grid-gap: 5px;
+	/*padding-left: 20px;
+	padding-right: 5px;*/
 	position: relative;
 	align-items: center;
 	justify-content: center;
@@ -422,143 +389,241 @@ figcaption {
 	margin-left: 17%;
 	margin-right: 17%;
 	margin-top: 30px;
+
 }
 
-.recipe-title{
+
+/* Row Count 1 */
+.recipe-intro {
+	grid-area: recipe-intro;
+	grid-column: 1 / span 2;
+	margin-top: 30px;
+	margin-left: 2%;
+	margin-right: 2%;
+	align-content: center;
+	justify-content: center;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+/* Row Count 2 */
+.recipe1-title {
+	grid-area: recipe1-title;
+	grid-column: 1 / span 2;
+	margin-left: 2%;
+	margin-right: 2%;
+	align-content: center;
+	justify-content: center;
 	text-align: center;
 	background-color: rgb(46,116,181);
-	font-weight: bold;
-	margin-right: 3%;
-	line-height: 1.5em;
-	/*margin-right: 2%; */
-
+}
+/* chicken thighs figure */
+/* Row Count 3 */
+.recipe1-pic {
+	grid-area: recipe1-pic;
+	grid-row: 3 / span 2;
+	margin-left: 4%;
 }
 
-.recipe-ing{
-	display: flex;
-	align-items:flex-start;
-	margin-right: 3%;
-	margin-left: -3rem;
-	margin-top: 2%;
+/* ingredient list for chicken thighs */
+.recipe1-ing{
+	grid-area: recipe1-ing;
+	grid-column: 2 / span 1;
+	grid-row: 3 / span 1;
+	margin-right: 4%;
 }
-
-.recipe-ins{
-	margin-left: -20px;
-	margin-right: 5%;
+/* instructions for chicken */
+.recipe1-ins{
+	grid-area: recipe1-ins;
+	grid-column: 2 / span 1;
+	grid-row: 4 / span 1;
+	padding-left: 6%;
+	margin-right: 4%;
 }
-
-.recipe-pic{
-	margin-top: 2%;
-}
-
-.footer-style{
+/* Row Count 5 */
+.recipe2-title {
+	grid-area: recipe2-title;
+	grid-column: 1 / span 2;
+	grid-row: 5 / span 1;
+	margin-left: 2%;
+	margin-right: 2%;
+	align-content: center;
+	justify-content: center;
 	text-align: center;
-	font-weight: bold;
-	margin-right: 3%;
+	background-color: rgb(46,116,181);
+}
+/* figure for bolognese */
+.recipe2-pic {
+	grid-area: recipe2-pic;
+	grid-column: 1 / span 1;
+	grid-row: 6 / span 2;
+	margin-left: 4%;
 }
 
-/* Responsive Recipe Page */
-/* Make all one column */
-@media screen and (max-width: 600px){
-	.recipes-grid{
+/* ingredients for bolognese */
+.recipe2-ing{
+	grid-area: recipe2-ing;
+	grid-column: 2 / span 1;
+	grid-row: 6 / span 1;
+	margin-right: 4%;
+}
+
+/* instructions for bolognese */
+.recipe2-ins{
+	grid-area: recipe2-ins;
+	grid-column: 2 / span 1;
+	grid-row: 7 / span 1;
+	margin-right: 4%;
+	padding-left: 6%;
+}
+
+/* item 9 header */
+.recipe3-title {
+	grid-area: recipe3-title;
+	grid-column: 1 / span 2;
+	grid-row: 8 / span 1;
+	margin-left: 2%;
+	margin-right: 2%;
+	align-content: center;
+	justify-content: center;
+	text-align: center;
+	background-color: rgb(46,116,181);
+}
+
+/* figure for panna cotta */
+.recipe3-pic {
+	grid-area: recipe3-pic;
+	grid-column: 1 / span 1;
+	grid-row: 9 / span 2;
+	margin-left: 4%;
+}
+
+/* ingredients for panna cotta */
+.recipe3-ing{
+	grid-area: recipe3-ing;
+	grid-column: 2 / span 1;
+	grid-row: 9 / span 1;
+	margin-right: 4%;
+}
+
+/* instructions for panna cotta */
+.recipe3-ins{
+	grid-area: recipe3-ins;
+	grid-column: 2 / span 1;
+	grid-row: 10 / span 1;
+	margin-right: 4%;
+	padding-left: 6%;
+}
+
+.recipe-footer{
+	grid-area: recipe-footer;
+	grid-column: 1 / span 2;
+	grid-row: 11 / span 1;
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-bottom: 30px;
+	align-content: center;
+	justify-content: center;
+	text-align: center;
+}
+
+@media screen and (max-width: 600px) { /*breakpoint*/
+  .recipes-grid {
+    grid-template-columns: none;
+		grid-template-rows: none;
 		margin-left: 2%;
 		margin-right: 2%;
-		padding: 10px;
-		grid-template-columns: 1fr;
-		grid-template-areas:
-			"recipe-header"
-			"recipe-intro"
-			"recipe1-title"
-			"recipe1-pic"
-			"recipe1-ing"
-			"recipe1-ins"
-			"recipe2-title"
-			"recipe2-pic"
-			"recipe2-ing"
-			"recipe2-ins"
-			"recipe3-title"
-			"recipe3-pic"
-			"recipe3-ing"
-			"recipe3-ins"
-			"recipe-footer"
-			"recipe-footer2";
-		}
-
-	.recipe-ing {
-		margin-left: 2%;
-		margin-right: 2%;
-		display: flex;
-		position: relative;
-		align-items: center;
-		justify-content: center;
-	}
-
-	.recipe-ins {
-		margin-left: 5%;
-		margin-right: 5%;
-		display: inline;
-		position: relative;
-		align-items: center;
-		justify-content: center;
-	}
-
-	.recipe-pic{
-		margin-left: 5%;
-		margin-right: 5%;
-		display: flex;
-		position: relative;
-		align-items: center;
-		justify-content: center;
-	}
-
-
-	.recipe-title{
-		margin-left: 2%;
-		margin-right: 2%;
-		position: relative;
-		align-items: center;
-		justify-content: center;
-	}
-
-	.recipe-intro{
-		margin-left: 5%;
-		margin-right: 5%;
-		display: flex;
-		position: relative;
-		align-items: center;
-		justify-content: center;
+  }
+	.recipe-intro {;
+		grid-column: 1 / span 1;
 	}
 
 	.recipe1-title {
-		display: flex;
-		margin-left: 3%;
-		margin-right: 3%;
+		grid-column: 1 / span 1;
 	}
 
-	.recipe2-title {
-
-		display: flex;
+	.recipe1-pic {
+		grid-row: 3 / span 2;
+		margin-left: 2%;
+		margin-right: 2%;
 	}
 
-	.recipe3-title {
-		display: flex;
+	.recipe1-ing{
+		grid-column: 1 / span 1;
+		grid-row: 5 / span 1;
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+
+	.recipe1-ins{
+		grid-column: 1 / span 1;
+		grid-row: 6 / span 1;
+		margin-left: 2%;
+		margin-right: 2%;
+		padding-right: 2%;
+		padding-left: 2%;
+	}
+
+	.recipe2-title{
+		grid-column: 1/ span 1;
+		grid-row: 7 / span 1;
+	}
+
+	.recipe2-pic {
+		grid-column: 1 / span 1;
+		grid-row: 8 / span 2;
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+
+	.recipe2-ing{
+		grid-column: 1 / span 1;
+		grid-row: 10 / span 1;
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+
+	.recipe2-ins{
+		grid-area: recipe2-ins;
+		grid-column: 1 / span 1;
+		grid-row: 11 / span 1;
+		margin-left: 2%;
+		margin-right: 2%;
+		padding-right: 2%;
+		padding-left: 2%;
+	}
+
+	.recipe3-title{
+		grid-column: 1/ span 1;
+		grid-row: 12 / span 1;
+	}
+
+	.recipe3-pic {
+		grid-column: 1 / span 1;
+		grid-row: 13 / span 2;
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+
+	.recipe3-ing{
+		grid-column: 1 / span 1;
+		grid-row: 15 / span 1;
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+
+	.recipe3-ins{
+		grid-column: 1 / span 1;
+		grid-row: 16 / span 1;
+		margin-left: 2%;
+		margin-right: 2%;
+		padding-right: 2%;
+		padding-left: 2%;
 	}
 
 	.recipe-footer {
-		display: none;
+		grid-column: 1/ span 1;
+		grid-row: 17/ span 1;
 	}
-
-	.recipe-footer2{
-		display: none;
-	}
-
-	.recipe-intro > p {
-		display: flex;
-		position: relative;
-		margin-left: 3%;
-		margin-right: 3%;
-	}
-
 }
 
 /* Contact Grid */
