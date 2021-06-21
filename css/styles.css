@@ -526,6 +526,10 @@ figcaption {
 	text-align: center;
 }
 
+.recipe-footer > a {
+	text-align: center;
+}
+
 @media screen and (max-width: 600px) { /*breakpoint*/
   .recipes-grid {
     grid-template-columns: none;
