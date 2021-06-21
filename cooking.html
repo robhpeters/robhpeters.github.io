@@ -19,58 +19,58 @@
 						<i class="fa fa-bars"></i>
 				</a>
 			</nav>
-		<!--  used id throughout page so I can link back to specific sections of page -->
 
 		<div class="recipes-grid" id="recipe">
-			<div class="recipe-header"></div>
-			<div class="recipe-intro">
+			<div class="section recipe-intro">
 				<p>I have recently found a love for cooking. The joy that comes from preparing
 				and sharing a wonderful meal with friends and family is unrivaled. Below
-			   you'll find some of my favorite recipes accompanied by an image of
+				 you'll find some of my favorite recipes accompanied by an image of
 			 the prepared dish. </p>
 			</div>
-			<div class="recipe1-title recipe-title">Chicken Thighs with Creamy Mustard Sauce</div>
-			<div class="recipe1-pic recipe-pic">
+			<div class="section recipe1-title recipe-title">Chicken Thighs with Creamy Mustard Sauce</div>
+			<div class="section recipe1-pic">
 				<figure>
 					<img src="images/chickenthighs.jpeg" alt="Chicken thighs in a creamy mustard sauce" style="max-width:100%;height:auto;">
 					<br />
 					<figcaption>Chicken Thighs in a creamy mustard sauce</figcaption>
 				</figure>
 			</div>
-			<div class="recipe-ing">
+			<div class="section recipe1-ing">
 				<ul>
-					<li class="recipe1-ing" v-for="ingredient in creamychicken">{{ ingredient }}</li>
+					<li v-for="ingredient in creamychicken">{{ ingredient }}</li>
 				</ul>
 			</div>
-			<div class="recipe1-ins recipe-ins">
-				<p>Place the chicken thighs on a cutting board, skin side up, and pat them dry with paper towels.
-				Sprinkle the chicken with 1.5 teaspoons of salt and .75 teaspoon of pepper. Turn them over and
-				sprinkle them with one more teaspoon of salt.</p>
-				<p>Heat 1 tablespoon of olive oil in a large (11 to 12-inch) cast iron skillet over medium heat.
-				When the oil is hot, place the chicken in the pan in one layer, skin side down. Cook over medium
-				heat for 15 minutes without moving, until the skin is golden brown. Turn the chicken pieces with
-				tongs, add the onions to the pan, including under the chicken, and cook over medium heat for 15
-				minutes, stirring the onions occasionally, until the thighs are cooked to 155 to 160 degrees and
-				the onions are browned. Transfer the chicken (not the onions) to a plate and allow to rest uncovered
-				while you make the sauce. If the onions aren't browned, cook them for another minute. </p>
-				<p>Add the wine, creme fraiche, Dijon mustard, whole-grain mustard, and 1 teaspoon of salt to the
-				skillet and stir over medium heat for one minute. Return the chicken, skin side up, and the juices
-				to the skillet, sprinkle with parsley, and serve hot.</p>
+			<div class="section recipe1-ins">
+				<div>
+					<p>Place the chicken thighs on a cutting board, skin side up, and pat them dry with paper towels.
+					Sprinkle the chicken with 1.5 teaspoons of salt and .75 teaspoon of pepper. Turn them over and
+					sprinkle them with one more teaspoon of salt.</p>
+					<p>Heat 1 tablespoon of olive oil in a large (11 to 12-inch) cast iron skillet over medium heat.
+					When the oil is hot, place the chicken in the pan in one layer, skin side down. Cook over medium
+					heat for 15 minutes without moving, until the skin is golden brown. Turn the chicken pieces with
+					tongs, add the onions to the pan, including under the chicken, and cook over medium heat for 15
+					minutes, stirring the onions occasionally, until the thighs are cooked to 155 to 160 degrees and
+					the onions are browned. Transfer the chicken (not the onions) to a plate and allow to rest uncovered
+					while you make the sauce. If the onions aren't browned, cook them for another minute. </p>
+					<p>Add the wine, creme fraiche, Dijon mustard, whole-grain mustard, and 1 teaspoon of salt to the
+					skillet and stir over medium heat for one minute. Return the chicken, skin side up, and the juices
+					to the skillet, sprinkle with parsley, and serve hot.</p>
+				</div>
 			</div>
-			<div class="recipe2-title recipe-title">Weeknight Bolognese</div>
-			<div class="recipe2-pic recipe-pic">
+			<div class="section recipe2-title recipe-title">Weeknight Bolognese</div>
+			<div class="section recipe2-pic">
 				<figure>
 					<img src="images/bolognese.jpeg" alt="Bolognese pasta with fresh Parmesan" style="max-width:100%;height:auto;">
 					<br />
 					<figcaption>Bolognese pasta with fresh Parmesan</figcaption>
 				</figure>
 			</div>
-			<div class="recipe2-ing recipe-ing">
+			<div class="section recipe2-ing">
 				<ul>
 					<li v-for="ingredient in bolognese">{{ ingredient }}</li>
 				</ul>
 			</div>
-			<div class="recipe2-ins recipe-ins">
+			<div class="section recipe2-ins">
 				<p>Heat 2 tablespoons of olive oil in large (12-inch) skillet over medium-high heat. Add
 				the ground sirloin and cook, crumbling the meat with a wooden spoon, for 5 to 7 minutes,
 				until the meat has lost its pink color and has started to brown. Stir in the garlic, oregano,
@@ -84,21 +84,20 @@
 				and pour into a large serving bowl. Add the sauce and 1/2 cup of Parmesan and toss well.
 				Serve hot with Parmesan on the side.</p>
 			</div>
-			<!-- recipe 3 panna cotta -->
-			<div class="recipe3-title recipe-title">Panna Cotta with fresh Raspberry Sauce</div>
-			<div class="recipe3-pic recipe-pic">
+			<div class="section recipe3-title recipe-title">Panna Cotta with fresh Raspberry Sauce</div>
+			<div class="section recipe3-pic">
 				<figure>
 					<img src="images/pannacotta.jpeg" alt="Panna Cotta with Fresh Raspberries" style="max-width:100%;height:auto;">
 					<br />
 					<figcaption>Panna Cotta at Christmas</figcaption>
 				</figure>
 			</div>
-			<div class="recipe3-ing recipe-ing">
+			<div class="section recipe3-ing">
 				<ul>
 					<li v-for="ingredient in pannacotta">{{ ingredient }}</li>
 				</ul>
 			</div>
-			<div class="recipe3-ins recipe-ins">
+			<div class="section recipe3-ins">
 				<p>In a small bowl, sprinkle the gelatin on 3 tablespoons cold water. Stir and set aside for 10
 				minutes to allow the gelatin to dissolve. Meanwhile, in a large bowl, whisk together 1.5 cups of
 				the cream, the yogurt, vanilla extract, and vanilla seeds. Heat the remaining 1.5 cups of cream
@@ -110,11 +109,7 @@
 				serving, spoon 2 tablespoons of the fresh raspberry sauce on each panna cotta and top with
 				fresh raspberries. Serve cold.</p>
 			</div>
-			<div class="recipe-footer">
-				<p class="top-link footer-style"><a href="#myTopNav">Top of page</a></p>
-			</div>
-			<div class="recipe-footer2">
-			</div>
+			<div class="section recipe-footer"></div>
 		</div>
 
 			<!-- Include VUE -->
