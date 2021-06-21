@@ -530,19 +530,17 @@ figcaption {
 	}
 
 	.recipe1-title {
-		grid-column: 1 / span 1;
 		display: flex;
 		margin-left: 3%;
 		margin-right: 3%;
 	}
 
 	.recipe2-title {
-		grid-column: 1 / span 1;
+
 		display: flex;
 	}
 
 	.recipe3-title {
-		grid-column: 1 / span 1;
 		display: flex;
 	}
 
